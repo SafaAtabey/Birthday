@@ -10,7 +10,7 @@ body{
     margin: 30px auto;
     max-width: 400px;
     border: 6px solid rgb(61, 39, 79);
-    background-image: url("İmg/gift-cover.jpg");
+    background-image: url("img2/gift-cover.jpg");
     height: 400px;
     background-size: cover;
     border-radius: 10px;
@@ -19,7 +19,7 @@ body{
     transition: background 0.3s ease;
 }
 #dg_section:hover{
-    background-image: url("İmg/dg.jpg");
+    background-image: url("img2/dg.jpg");
 }
 .title{
     text-shadow: 1px 1px black;
@@ -40,7 +40,7 @@ body{
     color: white;
 }
 #amazing_gif:hover{
-    background-image: url("İmg/lovein.gif");
+    background-image: url("img2/lovein.gif");
 }
 #other_section{
     display: flex;
@@ -72,19 +72,19 @@ body{
     background-position: center;
 }
 #first{
-    background-image: url("İmg/IMG_9800.gif");
+    background-image: url("img2/IMG_9800.gif");
 }
 #second{
-    background-image: url("İmg/IMG_9756.gif");
+    background-image: url("img2/IMG_9756.gif");
 }
 #third{
-    background-image: url("İmg/IMG_9798.gif");
+    background-image: url("img2/IMG_9798.gif");
 }
 #forth{
-    background-image: url("İmg/IMG_9759.gif");
+    background-image: url("img2/IMG_9759.gif");
 }
 #fifth{
-    background-image: url("İmg/IMG_9797 2.gif");
+    background-image: url("img2/IMG_9797 2.gif");
 }
 #last{
     margin-bottom: 30px;
