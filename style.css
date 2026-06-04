@@ -18,15 +18,9 @@ body{
     background-position: center;
     transition: background 0.3s ease;
 }
-
-/* Masaüstü Hover Durumları */
 #dg_section:hover{
     background-image: url("img2/dg.jpg");
 }
-#amazing_gif:hover{
-    background-image: url("img2/lovein.gif");
-}
-
 .title{
     text-shadow: 1px 1px black;
     margin: 0px;
@@ -39,11 +33,14 @@ body{
 }
 #footer{
     margin-top: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 25px;;
     font-style: italic;
 }
 .ahref{
     color: white;
+}
+#amazing_gif:hover{
+    background-image: url("img2/lovein.gif");
 }
 #other_section{
     display: flex;
@@ -74,38 +71,21 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
-
-/* Normal Resim Atamaları */
-#first{ background-image: url("img2/IMG_9800.gif"); }
-#second{ background-image: url("img2/IMG_9756.gif"); }
-#third{ background-image: url("img2/IMG_9798.gif"); }
-#forth{ background-image: url("img2/IMG_9759.gif"); }
-#fifth{ background-image: url("img2/IMG_9797 2.gif"); }
-
+#first{
+    background-image: url("img2/IMG_9800.gif");
+}
+#second{
+    background-image: url("img2/IMG_9756.gif");
+}
+#third{
+    background-image: url("img2/IMG_9798.gif");
+}
+#forth{
+    background-image: url("img2/IMG_9759.gif");
+}
+#fifth{
+    background-image: url("img2/IMG_9797 2.gif");
+}
 #last{
     margin-bottom: 30px;
-}
-
-/* 📱 Telefonlar ve tabletler için Kesin Çözüm Bloğu */
-@media (max-width: 768px) {
-  
-  /* Mobilde hediye kapağı yerine direkt asıl resim ve GIF gelsin */
-  #dg_section {
-    background-image: url("img2/dg.jpg") !important;
-  }
-
-  #amazing_gif {
-    background-image: url("img2/lovein.gif") !important;
-  }
-
-  /* Alt taraftaki fotoğrafların mobilde taşmaması için genişliği esnetiyoruz */
-  .family, .gift-images, .gifs {
-    max-width: 90% !important;
-    width: auto !important;
-    height: 350px !important; /* Telefon ekranına daha iyi sığması için */
-  }
-
-  .family {
-    height: auto !important;
-  }
 }
