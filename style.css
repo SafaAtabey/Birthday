@@ -18,7 +18,7 @@ body{
     background-position: center;
     transition: background 0.3s ease;
 }
-#dg_section:hover{
+#dg_section.open{ /* JS toggle for touch devices */
     background-image: url("img2/dg.jpg");
 }
 .title{
@@ -42,6 +42,19 @@ body{
 #amazing_gif:hover{
     background-image: url("img2/lovein.gif");
 }
+
+/* Only enable :hover rules on devices that actually support hover (prevents "stuck" hover on touch) */
+@media (hover: hover) and (pointer: fine) {
+  #dg_section:hover{
+      background-image: url("img2/dg.jpg");
+  }
+
+  #amazing_gif:hover{
+      background-image: url("img2/lovein.gif");
+  }
+}
+
+/* JS will toggle the `.open` class on touch devices so users can tap to reveal the same effect */
 #other_section{
     display: flex;
     align-items: center;

@@ -38,4 +38,28 @@
 
         </div>
     </body>
+    <script>
+        // If the device cannot hover, enable tap-to-toggle for elements that used :hover.
+        (function(){
+            var canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+            if (!canHover) {
+                // Elements we want to make tappable to reveal the hover state
+                var touchTargets = [document.getElementById('dg_section'), document.getElementById('amazing_gif')];
+                touchTargets.forEach(function(el){
+                    if (!el) return;
+                    el.addEventListener('click', function(e){
+                        // Toggle the class so second tap will follow links or dismiss
+                        el.classList.toggle('open');
+                    });
+                });
+                // Close open states when tapping outside
+                document.addEventListener('click', function(e){
+                    touchTargets.forEach(function(el){
+                        if (!el) return;
+                        if (el !== e.target && !el.contains(e.target)) el.classList.remove('open');
+                    });
+                });
+            }
+        })();
+    </script>
 </html>
