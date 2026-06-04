@@ -91,7 +91,6 @@ body{
 }
 /* Telefonlar ve tabletler için (Ekran genişliği 768px ve altı olan cihazlar) */
 @media (max-width: 768px) {
-  /* Hover efektini devre dışı bırakıp, görselleri mobilde direkt görünür yapıyoruz */
   .gifs, .gift-images, #dg_section, #amazing_gif, #first, #second, #third, #fourth, #fifth {
     opacity: 1 !important;
     visibility: visible !important;
